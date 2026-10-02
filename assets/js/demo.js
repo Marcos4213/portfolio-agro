@@ -2,11 +2,11 @@
   const cfg = window.PORTFOLIO || {
     name: "Marcos",
     brand: "Marcos • Sites para o Agro",
-    whatsapp: "55XXXXXXXXXXX"
+    whatsapp: "5511930729435"
   };
 
   function waUrl(message) {
-    const n = String(cfg.whatsapp || "55XXXXXXXXXXX").replace(/[^\dX]/gi, "");
+    const n = String(cfg.whatsapp || "5511930729435").replace(/\D/g, "");
     const text = message || ("Olá, " + cfg.name + ". Vi o portfólio e quero uma prévia do meu site.");
     return "https://wa.me/" + n + "?text=" + encodeURIComponent(text);
   }

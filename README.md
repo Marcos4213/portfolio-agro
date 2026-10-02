@@ -12,15 +12,15 @@ Edite só o arquivo `config.js` na raiz do repositório:
 window.PORTFOLIO = {
   name: "Marcos",
   brand: "Marcos • Sites para o Agro",
-  whatsapp: "55XXXXXXXXXXX"
+  whatsapp: "5511930729435"
 };
 ```
 
 - `name`: o nome que entra na mensagem pronta do WhatsApp.
 - `brand`: o nome que aparece no topo do portfólio.
-- `whatsapp`: DDI + DDD + número, só dígitos. Exemplo: `5565999999999`.
+- `whatsapp`: DDI + DDD + número, só dígitos. O número atual é `5511930729435` (Brasil +55, DDD 11, 93072-9435).
 - Não use espaço, parêntese, traço ou `+`.
-- O valor `55XXXXXXXXXXX` é um marcador. Troque pelo número real antes de mandar o link. Enquanto as letras `X` estiverem ali, o WhatsApp não abre uma conversa válida.
+- O hub e as seis demonstrações leem esse valor. Cada botão de WhatsApp abre `https://wa.me/5511930729435`.
 
 Depois do commit na branch `main`, o GitHub Actions publica de novo em alguns minutos.
 
