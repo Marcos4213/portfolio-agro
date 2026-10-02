@@ -1,7 +1,7 @@
 (function () {
   const cfg = window.PORTFOLIO || {
-    name: "Marcos",
-    brand: "Marcos • Sites para o Agro",
+    name: "DevBrasil",
+    brand: "DevBrasil",
     whatsapp: "5511930729435"
   };
 

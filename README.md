@@ -1,6 +1,6 @@
-# Marcos • Sites para o Agro
+# DevBrasil · Sites para o agro
 
-Portfólio estático para enviar no WhatsApp depois da ligação. O dono abre no celular, vê sites demonstrativos e pede uma prévia.
+Site da agência DevBrasil. O dono abre no celular, vê os cases em tela cheia e pede uma prévia no WhatsApp.
 
 Endereço publicado: https://marcos4213.github.io/portfolio-agro/
 
@@ -10,23 +10,23 @@ Edite só o arquivo `config.js` na raiz do repositório:
 
 ```js
 window.PORTFOLIO = {
-  name: "Marcos",
-  brand: "Marcos • Sites para o Agro",
+  name: "DevBrasil",
+  brand: "DevBrasil",
   whatsapp: "5511930729435"
 };
 ```
 
 - `name`: o nome que entra na mensagem pronta do WhatsApp.
-- `brand`: o nome que aparece no topo do portfólio.
+- `brand`: o nome da agência no rodapé.
 - `whatsapp`: DDI + DDD + número, só dígitos. O número atual é `5511930729435` (Brasil +55, DDD 11, 93072-9435).
 - Não use espaço, parêntese, traço ou `+`.
-- O hub e as seis demonstrações leem esse valor. Cada botão de WhatsApp abre `https://wa.me/5511930729435`.
+- O site da DevBrasil e as seis demonstrações leem esse valor. Cada botão de WhatsApp abre `https://wa.me/5511930729435`.
 
 Depois do commit na branch `main`, o GitHub Actions publica de novo em alguns minutos.
 
 ## O que tem no site
 
-- Hub em `index.html`: manifesto, galeria com prévia ao vivo (passe o mouse ou toque em “Ver ao vivo”), alternância computador/celular, como funciona, dúvidas e o botão “Quero uma prévia do meu site”.
+- Capa em `index.html`: site da agência DevBrasil, com cases em tela cheia. Sem a alternância computador/celular.
 - Seis demonstrações em `demos/`, cada uma com marca, pessoas e depoimentos fictícios. No rodapé de cada uma: “Site demonstrativo – marca e depoimentos fictícios”.
 - Não há preço do serviço neste portfólio.
 
@@ -47,7 +47,7 @@ Os links de Instagram seguem o padrão `https://instagram.com/usuario`. Os perfi
 
 Imagens de estoque da [Pexels](https://www.pexels.com/license/), comprimidas e guardadas em `assets/img/`. Não há foto de Instagram de empresa real nem logo de marca registrada. Pessoas, depoimentos e nomes de produto são fictícios.
 
-A capa do portfólio usa as fontes Fraunces e Outfit (licença SIL Open Font License), arquivos em `assets/fonts/`. As demonstrações carregam as famílias pelo Google Fonts.
+A capa da DevBrasil usa Syne e Manrope (licença SIL Open Font License), arquivos em `assets/fonts/`. As demonstrações carregam as famílias pelo Google Fonts.
 
 Fotos (id Pexels): 265216, 1482101, 326082, 2886937, 2132250, 2255459, 440731, 2252584, 1112080, 1595104, 2382904, 422218, 325944, 1632790, 175389, 96715, 974314, 2933243, 1084540, 1459331, 248880, 1683975, 235725, 247599, 2165688, 164504, 265278, 1114690, 584928, 2933242, 422220, 1459505.
 
