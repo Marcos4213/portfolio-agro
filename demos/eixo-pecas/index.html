@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eixo Peças · Rio Verde, GO</title>
+  <meta name="description" content="Peças e implementos em Rio Verde. Busca por modelo de máquina, código de balcão e o que sai hoje. Site demonstrativo.">
+  <meta name="theme-color" content="#121418">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Eixo Peças · Rio Verde">
+  <meta property="og:description" content="A peça que para a colheita não pode esperar até amanhã.">
+  <meta property="og:image" content="https://marcos4213.github.io/portfolio-agro/assets/og/eixo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@560;700&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/chrome.css">
+  <link rel="stylesheet" href="eixo.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="top" data-header>
+    <a class="brand" href="#topo">Eixo Peças<small>Rio Verde · GO</small></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" data-nav>
+      <a href="#ferramenta">Buscar peça</a>
+      <a href="#catalogo">Balcão</a>
+      <a href="#sobre">A casa</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn" data-wa="Olá, Marcos. Vi a demonstração da Eixo Peças e quero uma prévia assim para a minha loja.">Quero um site assim</a>
+  </header>
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <img src="../../assets/img/tractor-field.jpg" width="1100" height="731" alt="Trator trabalhando em lavoura verde" fetchpriority="high" decoding="async">
+      <div class="veil"></div>
+      <div class="wrap">
+        <p class="kicker">Peças e implementos</p>
+        <h1>A peça da colheita não espera até amanhã.</h1>
+        <p>Balcão em Rio Verde para quem está com a máquina parada. Código interno, aplicação e se sai hoje ou chega em 24 horas na região.</p>
+        <div class="actions">
+          <a class="btn" href="#ferramenta">Buscar peça por máquina</a>
+          <a class="btn ghost" data-wa="Olá, Marcos. Vi a demonstração da Eixo Peças e quero uma prévia assim para a minha loja.">Quero um site assim</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="ferramenta">
+      <div class="wrap bench">
+        <div>
+          <p class="kicker">Balcão digital</p>
+          <h2>Qual máquina parou?</h2>
+          <p style="color:var(--muted);margin-top:.6rem">Escolha o modelo da casa e o sistema. A lista é vitrine fictícia, com código interno — do jeito que o balconista procura, não do jeito do catálogo importado.</p>
+        </div>
+        <div>
+          <form id="peca-form">
+            <label class="field">Máquina
+              <select id="maq">
+                <option value="tr180">Trator médio 180 cv</option>
+                <option value="cl40">Colheitadeira axial 40 pés</option>
+                <option value="pl30">Plantadeira 30 linhas</option>
+                <option value="pv30">Pulverizador 30 metros</option>
+              </select>
+            </label>
+            <label class="field">Sistema
+              <select id="sis">
+                <option value="filtros">Motor e filtros</option>
+                <option value="hidraulico">Hidráulico</option>
+                <option value="plataforma">Plataforma e linhas</option>
+                <option value="eletrica">Elétrica</option>
+              </select>
+            </label>
+            <button class="btn" type="submit">Buscar no balcão</button>
+          </form>
+          <div class="results" id="peca-out" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap stats" id="numeros" aria-label="Números da casa">
+      <article><strong>22</strong><span>anos de balcão em Rio Verde</span></article>
+      <article><strong>18 mil</strong><span>itens no endereço de prateleira</span></article>
+      <article><strong>3.200</strong><span>atendimentos por safra</span></article>
+      <article><strong>90 km</strong><span>de rota de entrega no mesmo dia</span></article>
+    </section>
+
+    <section class="band" id="catalogo">
+      <div class="wrap">
+        <h2>O que o balcão mostra primeiro</h2>
+        <div class="filters" role="toolbar" aria-label="Filtrar peças">
+          <button type="button" data-filter="all">Tudo</button>
+          <button type="button" data-filter="filtro">Filtros</button>
+          <button type="button" data-filter="hidraulico">Hidráulico</button>
+          <button type="button" data-filter="corte">Corte e linha</button>
+          <button type="button" data-filter="eletrica">Elétrica</button>
+        </div>
+        <div class="catalog" data-catalog>
+          <article class="pcard" data-item data-cat="filtro" data-cultura="trator colheita" data-title="Filtro de óleo EX-4410" data-wa-msg="Olá, Marcos. Quero um buscador de peças assim no site da minha loja.">
+            <img src="../../assets/img/machine-sm.jpg" alt="Trator antigo em campo aberto, imagem ilustrativa" width="800" height="600" loading="lazy">
+            <div><p class="sku">EX-4410</p><h3>Filtro de óleo do motor</h3><p>Trator 180 cv · troca a cada 250 h · sai hoje</p></div>
+            <template><p>Item de giro. O balconista puxa pelo código EX-4410, não pelo nome de catálogo estrangeiro.</p><dl><div><dt>Máquina</dt><dd>Trator médio 180 cv</dd></div><div><dt>Aplicação</dt><dd>Motor, intervalo de 250 horas</dd></div><div><dt>Prateleira</dt><dd>Sai no balcão</dd></div><div><dt>Código</dt><dd>EX-4410</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="filtro" data-cultura="trator" data-title="Filtro de ar EX-4418" data-wa-msg="Olá, Marcos. Quero um buscador de peças assim no site da minha loja.">
+            <img src="../../assets/img/tractor-sm.jpg" alt="Trator verde em lavoura" width="800" height="449" loading="lazy">
+            <div><p class="sku">EX-4418</p><h3>Filtro de ar externo</h3><p>Trator 180 cv · poeira de plantio · sai hoje</p></div>
+            <template><p>Na poeira do plantio o filtro entope antes da hora marcada. A casa deixa par sobrando.</p><dl><div><dt>Máquina</dt><dd>Trator médio 180 cv</dd></div><div><dt>Aplicação</dt><dd>Admissão de ar</dd></div><div><dt>Prateleira</dt><dd>Sai no balcão</dd></div><div><dt>Código</dt><dd>EX-4418</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="hidraulico" data-cultura="colheita" data-title="Mangueira de plataforma EX-7721" data-wa-msg="Olá, Marcos. Quero um buscador de peças assim no site da minha loja.">
+            <img src="../../assets/img/harvest-sm.jpg" alt="Máquina em lavoura dourada" width="800" height="533" loading="lazy">
+            <div><p class="sku">EX-7721</p><h3>Mangueira da plataforma</h3><p>Colheitadeira 40 pés · 24 h na região</p></div>
+            <template><p>Mangueira de alta da plataforma. Medida conferida no balcão antes de sair, para não voltar no meio do talhão.</p><dl><div><dt>Máquina</dt><dd>Colheitadeira axial 40 pés</dd></div><div><dt>Aplicação</dt><dd>Acionamento da plataforma</dd></div><div><dt>Prateleira</dt><dd>Chega em até 24 h num raio de 90 km</dd></div><div><dt>Código</dt><dd>EX-7721</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="corte" data-cultura="colheita" data-title="Faca seccionada EX-3104" data-wa-msg="Olá, Marcos. Quero um buscador de peças assim no site da minha loja.">
+            <img src="../../assets/img/wheat-sm.jpg" alt="Trigo pronto para colheita" width="800" height="533" loading="lazy">
+            <div><p class="sku">EX-3104</p><h3>Faca seccionada</h3><p>Plataforma 40 pés · jogo de 10 · sai hoje</p></div>
+            <template><p>Seção de corte para plataforma de cereais. Vende em jogo porque uma faca só não resolve o trecho falhado.</p><dl><div><dt>Máquina</dt><dd>Colheitadeira axial 40 pés</dd></div><div><dt>Aplicação</dt><dd>Barra de corte</dd></div><div><dt>Prateleira</dt><dd>Sai no balcão, jogo com 10 seções</dd></div><div><dt>Código</dt><dd>EX-3104</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="corte" data-cultura="plantio" data-title="Disco de corte EX-5502" data-wa-msg="Olá, Marcos. Quero um buscador de peças assim no site da minha loja.">
+            <img src="../../assets/img/soil-sm.jpg" alt="Lavoura verde em linha" width="800" height="533" loading="lazy">
+            <div><p class="sku">EX-5502</p><h3>Disco de corte 18"</h3><p>Plantadeira 30 linhas · palhada de milho</p></div>
+            <template><p>Disco para palhada pesada de milho. A casa indica o par, não a unidade solta, quando o desgaste está desigual.</p><dl><div><dt>Máquina</dt><dd>Plantadeira 30 linhas</dd></div><div><dt>Aplicação</dt><dd>Corte da palhada</dd></div><div><dt>Prateleira</dt><dd>Sai no balcão</dd></div><div><dt>Código</dt><dd>EX-5502</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="eletrica" data-cultura="pulverizador" data-title="Sensor de barra EX-8807" data-wa-msg="Olá, Marcos. Quero um buscador de peças assim no site da minha loja.">
+            <img src="../../assets/img/sprayer-sm.jpg" alt="Pulverizador agrícola em operação" width="900" height="600" loading="lazy">
+            <div><p class="sku">EX-8807</p><h3>Sensor de altura da barra</h3><p>Pulverizador 30 m · 24 h</p></div>
+            <template><p>Quando o sensor falha, a barra beija o chão. A peça sai com o conector conferido.</p><dl><div><dt>Máquina</dt><dd>Pulverizador autopropelido 30 m</dd></div><div><dt>Aplicação</dt><dd>Altura automática da barra</dd></div><div><dt>Prateleira</dt><dd>Chega em até 24 h na região</dd></div><div><dt>Código</dt><dd>EX-8807</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="hidraulico" data-cultura="plantio" data-title="Motor hidráulico de linha EX-2280" data-wa-msg="Olá, Marcos. Quero um buscador de peças assim no site da minha loja.">
+            <img src="../../assets/img/aerial-rows-sm.jpg" alt="Linhas de plantio vistas de cima" width="900" height="599" loading="lazy">
+            <div><p class="sku">EX-2280</p><h3>Motor hidráulico de linha</h3><p>Plantadeira 30 linhas · sob consulta de prazo</p></div>
+            <template><p>Motor de acionamento de dosador. Não é item de prateleira cheia: a casa confirma o lado e o fluxo antes de pedir.</p><dl><div><dt>Máquina</dt><dd>Plantadeira 30 linhas</dd></div><div><dt>Aplicação</dt><dd>Dosador de semente</dd></div><div><dt>Prateleira</dt><dd>Encomenda com prazo combinado</dd></div><div><dt>Código</dt><dd>EX-2280</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="eletrica" data-cultura="trator colheita" data-title="Alternador EX-9012" data-wa-msg="Olá, Marcos. Quero um buscador de peças assim no site da minha loja.">
+            <img src="../../assets/img/tractor-sunset-sm.jpg" alt="Trator no fim da tarde" width="800" height="533" loading="lazy">
+            <div><p class="sku">EX-9012</p><h3>Alternador 150 A</h3><p>Trator 180 cv e axial · sai hoje</p></div>
+            <template><p>Alternador de giro alto para máquina que dorme com farol e monitor ligados.</p><dl><div><dt>Máquinas</dt><dd>Trator 180 cv e colheitadeira axial</dd></div><div><dt>Aplicação</dt><dd>Sistema elétrico</dd></div><div><dt>Prateleira</dt><dd>Sai no balcão</dd></div><div><dt>Código</dt><dd>EX-9012</dd></div></dl></template>
+          </article>
+        </div>
+        <p data-catalog-empty hidden>Nada neste filtro.</p>
+      </div>
+    </section>
+
+    <section class="band" id="diferenciais">
+      <div class="wrap grid-3">
+        <article class="diff reveal"><strong>Código de balcão</strong><p>O produtor manda o EX no áudio. O balconista acha a gaveta sem traduzir catálogo.</p></article>
+        <article class="diff reveal"><strong>Sai hoje ou 24 horas</strong><p>O site diz o prazo antes da viagem até Rio Verde. Máquina parada não aceita “vamos ver”.</p></article>
+        <article class="diff reveal"><strong>Implemento junto da peça</strong><p>Disco, faca e mangueira do mesmo atendimento. Uma nota, uma viagem.</p></article>
+      </div>
+    </section>
+
+    <section class="band" id="sobre">
+      <div class="wrap about">
+        <div>
+          <p class="kicker">A casa</p>
+          <h2>Oficina de pai e filho que virou endereço de peça.</h2>
+          <p style="color:var(--muted);margin-top:.7rem">A Eixo abriu em 2004 na saída para Montividiu, quando a colheita de Rio Verde começou a não perdoar atraso. O estoque cresceu em cima do que realmente parava máquina, não do que o representante queria empurrar.</p>
+        </div>
+        <img src="../../assets/img/tractor.jpg" width="1100" height="617" alt="Trator verde em campo aberto" loading="lazy" decoding="async">
+      </div>
+    </section>
+
+    <section class="band" id="equipe">
+      <div class="wrap people">
+        <article class="person"><span class="mono">RM</span><div><strong>Rui Matos</strong><p>Dono. Ainda atende o balcão na abertura da colheita.</p></div></article>
+        <article class="person"><span class="mono">LS</span><div><strong>Lívia Sampaio</strong><p>Peças de plataforma e plantio. Confere medida antes de prometer.</p></div></article>
+        <article class="person"><span class="mono">DC</span><div><strong>Davi Cruz</strong><p>Entrega. Conhece a vicinal que a carreta não desce.</p></div></article>
+      </div>
+    </section>
+
+    <section class="band" id="depoimentos">
+      <div class="wrap quotes">
+        <figure class="quote"><blockquote>“Mandei o código às 6h. Às 9h a faca estava na plataforma.”</blockquote><figcaption>Heitor N. · colheita de soja · Rio Verde</figcaption></figure>
+        <figure class="quote"><blockquote>“Parei de ir à cidade para ouvir que não tem. O site já diz.”</blockquote><figcaption>Sandra P. · plantio · Jataí</figcaption></figure>
+        <figure class="quote"><blockquote>“O sensor da barra chegou no outro dia. Não perdi a janela do fungicida.”</blockquote><figcaption>Caio V. · pulverização · Santa Helena</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="band" id="galeria">
+      <div class="wrap shots">
+        <button type="button" data-lightbox-src="../../assets/img/tractor-field.jpg" data-lightbox-alt="Trator em lavoura"><img src="../../assets/img/tractor-field.jpg" alt="Trator trabalhando na lavoura" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/harvest.jpg" data-lightbox-alt="Colheita em campo dourado"><img src="../../assets/img/harvest-sm.jpg" alt="Colheita" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/sprayer.jpg" data-lightbox-alt="Pulverizador em operação"><img src="../../assets/img/sprayer-sm.jpg" alt="Pulverizador" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/machine.jpg" data-lightbox-alt="Trator em campo"><img src="../../assets/img/machine-sm.jpg" alt="Máquina no campo" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/farmer-2.jpg" data-lightbox-alt="Pessoa no campo ao pôr do sol"><img src="../../assets/img/farmer-2-sm.jpg" alt="Pessoa no campo" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="band" id="parceiros">
+      <div class="wrap">
+        <p class="kicker">Marcas parceiras fictícias</p>
+        <ul class="marks"><li>Aço da Serra</li><li>Borrachas do Cerrado</li><li>Filtro Planalto</li><li>Hidráulica Vereda</li><li>Corte Rio Verde</li><li>Elétrica do Talhão</li></ul>
+      </div>
+    </section>
+
+    <section class="band" id="faq">
+      <div class="wrap">
+        <h2>Antes de descer a máquina</h2>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">O código do site é o do fabricante?<span>+</span></button><div data-faq-panel>Não. É o código interno da Eixo, o mesmo do balcão. O cruzamento com o original o balconista faz com você.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Entregam com a colheita rodando?<span>+</span></button><div data-faq-panel>No raio de 90 km, o que está marcado como “sai hoje” sai no mesmo dia enquanto o balcão está aberto. Fora disso, combinamos o horário.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Vocês montam o implemento?<span>+</span></button><div data-faq-panel>Ajustamos disco, kit de linha e revisão de plataforma na oficina da casa. Máquina inteira é conversa com a concessionária.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Não achei meu modelo.<span>+</span></button><div data-faq-panel>A vitrine mostra os quatro conjuntos que mais param na região. Manda o modelo no WhatsApp que o balcão responde com o que tem.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Aceitam a peça velha de volta?<span>+</span></button><div data-faq-panel>Em item hidráulico selecionado, sim, para conferir o defeito. Não é regra de todos os códigos.</div></div>
+      </div>
+    </section>
+
+    <section class="band" id="contato">
+      <div class="wrap cta">
+        <h2>Sua loja de peças com esse balcão no celular.</h2>
+        <p>Demonstração fictícia. Se o produtor da sua cidade procura peça de madrugada, o site pode responder antes do balcão abrir.</p>
+        <a class="btn" data-wa="Olá, Marcos. Vi a demonstração da Eixo Peças e quero uma prévia do site da minha loja. Podemos marcar uma conversa por vídeo.">Quero uma prévia do meu site</a>
+      </div>
+    </section>
+  </main>
+  <footer class="foot wrap">
+    <div>Eixo Peças · saída para Montividiu, Rio Verde — GO · <a href="https://instagram.com/eixo.pecas" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="../../index.html">Voltar ao portfólio</a></div>
+    <div>Site demonstrativo – marca e depoimentos fictícios.</div>
+  </footer>
+  <a class="wa-float" data-wa="Olá, Marcos. Vi a demonstração da Eixo Peças e quero uma prévia assim para a minha loja." aria-label="Pedir uma prévia pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>Quero um site assim</a>
+  <div class="modal" data-modal hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mt"><header><h2 id="mt" data-modal-title></h2><button class="modal-x" type="button" data-modal-close aria-label="Fechar">×</button></header><div class="sheet" data-modal-body></div><a class="btn" data-modal-wa href="#">Quero essa busca no meu site</a></div></div>
+  <div class="lightbox" data-lightbox hidden><button type="button" data-lightbox-close aria-label="Fechar foto">×</button><img alt=""></div>
+  <script src="../../config.js"></script>
+  <script src="../../assets/js/demo.js"></script>
+  <script>
+    (function () {
+      var pecas = [
+        { maq: "tr180", sis: "filtros", sku: "EX-4410", nome: "Filtro de óleo do motor", det: "Troca a cada 250 h. Sai no balcão." },
+        { maq: "tr180", sis: "filtros", sku: "EX-4418", nome: "Filtro de ar externo", det: "Poeira de plantio. Sai no balcão." },
+        { maq: "tr180", sis: "hidraulico", sku: "EX-2204", nome: "Reparo da direção", det: "Kit de vedação. Sai no balcão." },
+        { maq: "tr180", sis: "eletrica", sku: "EX-9012", nome: "Alternador 150 A", det: "Sai no balcão." },
+        { maq: "cl40", sis: "plataforma", sku: "EX-3104", nome: "Faca seccionada", det: "Jogo com 10 seções. Sai no balcão." },
+        { maq: "cl40", sis: "hidraulico", sku: "EX-7721", nome: "Mangueira da plataforma", det: "Chega em até 24 h na região." },
+        { maq: "cl40", sis: "filtros", sku: "EX-4488", nome: "Filtro de combustível duplo", det: "Par. Sai no balcão." },
+        { maq: "cl40", sis: "eletrica", sku: "EX-9012", nome: "Alternador 150 A", det: "Sai no balcão." },
+        { maq: "pl30", sis: "plataforma", sku: "EX-5502", nome: "Disco de corte 18 pol.", det: "Palhada de milho. Sai no balcão." },
+        { maq: "pl30", sis: "plataforma", sku: "EX-5519", nome: "Condutor de semente", det: "Linha pantográfica. Sai no balcão." },
+        { maq: "pl30", sis: "hidraulico", sku: "EX-2280", nome: "Motor hidráulico de linha", det: "Encomenda. Prazo combinado no balcão." },
+        { maq: "pv30", sis: "eletrica", sku: "EX-8807", nome: "Sensor de altura da barra", det: "Chega em até 24 h na região." },
+        { maq: "pv30", sis: "hidraulico", sku: "EX-7740", nome: "Vedação da bomba de calda", det: "Sai no balcão." },
+        { maq: "pv30", sis: "filtros", sku: "EX-4490", nome: "Filtro de linha da barra", det: "Jogo de 8. Sai no balcão." }
+      ];
+      var out = document.getElementById("peca-out");
+      function render() {
+        var maq = document.getElementById("maq").value;
+        var sis = document.getElementById("sis").value;
+        var lista = pecas.filter(function (p) { return p.maq === maq && p.sis === sis; });
+        if (!lista.length) {
+          out.innerHTML = "<p class='result'>Este conjunto não está na vitrine. No site da sua loja, a busca pode incluir o estoque real.</p>";
+          return;
+        }
+        out.innerHTML = lista.map(function (p) {
+          return "<article class='result'><span class='sku'>" + p.sku + "</span><b>" + p.nome + "</b><span>" + p.det + "</span></article>";
+        }).join("");
+      }
+      document.getElementById("peca-form").addEventListener("submit", function (e) { e.preventDefault(); render(); });
+      render();
+    })();
+  </script>
+</body>
+</html>

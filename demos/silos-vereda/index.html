@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Silos do Vereda · Sorriso, MT</title>
+  <meta name="description" content="Armazém e cerealista em Sorriso. Cotação ilustrativa e mapa de recebimento. Site demonstrativo.">
+  <meta name="theme-color" content="#24221e">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Silos do Vereda · Sorriso">
+  <meta property="og:description" content="Seu grão guardado, classificado e com número na hora.">
+  <meta property="og:image" content="https://marcos4213.github.io/portfolio-agro/assets/og/silos.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Instrument+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/chrome.css">
+  <link rel="stylesheet" href="silos.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="top" data-header>
+    <a class="brand" href="#topo">Silos do Vereda</a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" data-nav>
+      <a href="#cotacao">Cotação</a>
+      <a href="#mapa">Região</a>
+      <a href="#catalogo">Serviços</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn" data-wa="Olá, Marcos. Vi a demonstração dos Silos do Vereda e quero uma prévia assim para o meu armazém.">Quero um site assim</a>
+  </header>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Soja · Milho · Sorgo · Recebimento · Secagem · Classificação ·&nbsp;</span><span>Soja · Milho · Sorgo · Recebimento · Secagem · Classificação ·&nbsp;</span></div></div>
+  <main id="conteudo">
+    <section class="hero wrap" id="topo">
+      <div>
+        <p class="kicker">Armazém e cerealista · Sorriso, MT</p>
+        <h1>Seu grão tem lugar.</h1>
+        <p>Recebimento, secagem e guarda no norte do Mato Grosso. Umidade na balança, fila combinada e o número do dia escrito — mesmo quando o número é de demonstração.</p>
+        <div class="actions">
+          <a class="btn" href="#mapa">Ver quem a casa recebe</a>
+          <a class="btn ghost" data-wa="Olá, Marcos. Vi a demonstração dos Silos do Vereda e quero uma prévia assim para o meu armazém.">Quero um site assim</a>
+        </div>
+      </div>
+      <img src="../../assets/img/silo.jpg" width="1280" height="852" alt="Silos de grãos contra o céu" fetchpriority="high" decoding="async">
+    </section>
+    <section class="board" id="cotacao" aria-label="Cotações ilustrativas">
+      <article class="quote-card">
+        <span>Quadro do dia · fictício</span>
+        <strong id="hora">—</strong>
+        <button class="btn" type="button" id="mover">Simular variação</button>
+      </article>
+      <article class="quote-card"><span>Soja · saca 60 kg</span><strong id="q-soja">R$ 128,40</strong><em id="d-soja">referência</em></article>
+      <article class="quote-card"><span>Milho · saca 60 kg</span><strong id="q-milho">R$ 58,90</strong><em id="d-milho">referência</em></article>
+      <article class="quote-card"><span>Sorgo · saca 60 kg</span><strong id="q-sorgo">R$ 42,10</strong><em id="d-sorgo">referência</em></article>
+    </section>
+    <p class="disclaimer wrap">Números fictícios para demonstração. Não são cotação de mercado, nem oferta de compra.</p>
+
+    <section class="band" id="mapa">
+      <div class="wrap map-layout">
+        <div>
+          <p class="kicker">Área de recebimento</p>
+          <h2 style="font-size:clamp(2rem,5vw,3.4rem);margin:.4rem 0 .8rem">Onde o caminhão entra.</h2>
+          <svg class="mapa" viewBox="0 0 360 260" role="img" aria-label="Esquema ilustrativo da região de Sorriso">
+            <rect width="360" height="260" fill="#1b1916"/>
+            <path d="M40 40h280v180H40z" fill="none" stroke="#e7dcc4" stroke-dasharray="4 6"/>
+            <text x="48" y="28" fill="#e7dcc4" font-size="12">Norte do MT · esquema, não é mapa oficial</text>
+            <circle cx="180" cy="130" r="8" fill="#e7dcc4"/>
+            <text x="194" y="134" fill="#f3ead7" font-size="13">Sorriso</text>
+            <circle cx="150" cy="70" r="5" fill="#c9844a"/>
+            <text x="160" y="66" fill="#d9d0c0" font-size="12">Sinop</text>
+            <circle cx="210" cy="175" r="5" fill="#c9844a"/>
+            <text x="220" y="190" fill="#d9d0c0" font-size="12">Lucas</text>
+            <circle cx="250" cy="120" r="5" fill="#c9844a"/>
+            <text x="260" y="116" fill="#d9d0c0" font-size="12">Ubiratã</text>
+            <circle cx="120" cy="150" r="5" fill="#c9844a"/>
+            <text x="48" y="154" fill="#d9d0c0" font-size="12">Ipiranga</text>
+          </svg>
+        </div>
+        <div>
+          <div class="pins" role="group" aria-label="Cidades de recebimento">
+            <button type="button" data-city="sorriso" aria-pressed="true">Sorriso</button>
+            <button type="button" data-city="lucas" aria-pressed="false">Lucas</button>
+            <button type="button" data-city="sinop" aria-pressed="false">Sinop</button>
+            <button type="button" data-city="ubirata" aria-pressed="false">Nova Ubiratã</button>
+            <button type="button" data-city="ipiranga" aria-pressed="false">Ipiranga do Norte</button>
+            <button type="button" data-city="mutum" aria-pressed="false">Nova Mutum</button>
+          </div>
+          <div class="pin-card" id="pin-card" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap stats" id="numeros">
+      <article><strong>27</strong><span>anos de recebimento</span></article>
+      <article><strong>160 mil t</strong><span>de capacidade estática ilustrativa</span></article>
+      <article><strong>380</strong><span>produtores entregando</span></article>
+      <article><strong>2.400 t</strong><span>de secagem por dia, na safra cheia</span></article>
+    </section>
+
+    <section class="band" id="catalogo">
+      <div class="wrap">
+        <h2>O que acontece com o grão</h2>
+        <div class="filters" role="toolbar" aria-label="Filtrar serviços">
+          <button type="button" data-filter="all">Tudo</button>
+          <button type="button" data-filter="recebimento">Recebimento</button>
+          <button type="button" data-filter="secagem">Secagem</button>
+          <button type="button" data-filter="guarda">Guarda</button>
+          <button type="button" data-filter="expedicao">Expedição</button>
+        </div>
+        <label class="field" style="max-width:220px">Grão
+          <select data-cultura-filter aria-label="Filtrar por grão">
+            <option value="all">Todos</option>
+            <option value="soja">Soja</option>
+            <option value="milho">Milho</option>
+            <option value="sorgo">Sorgo</option>
+          </select>
+        </label>
+        <div class="catalog" data-catalog>
+          <article class="pcard" data-item data-cat="recebimento" data-cultura="soja milho sorgo" data-title="Balança e fila" data-wa-msg="Olá, Marcos. Quero um site de armazém com cotação e mapa, nesta linha.">
+            <h3>Balança e fila</h3><p>Recebimento com hora combinada na safra.</p>
+            <template><p>O caminhão entra com horário. Fila sem hora é como a casa perdia a noite inteira.</p><dl><div><dt>Grãos</dt><dd>Soja, milho e sorgo</dd></div><div><dt>No pátio</dt><dd>Amostra, umidade e peso antes de descarregar</dd></div><div><dt>Safra</dt><dd>Agenda aberta com antecedência para quem já entrega aqui</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="recebimento" data-cultura="soja milho sorgo" data-title="Classificação" data-wa-msg="Olá, Marcos. Quero um site de armazém com cotação e mapa, nesta linha.">
+            <h3>Classificação</h3><p>Umidade, impureza e avariado na hora da descarga.</p>
+            <template><p>O papel sai junto com o ticket. Discussão de amostra se resolve no laboratório da casa, não no grupo.</p><dl><div><dt>O que mede</dt><dd>Umidade, impureza, ardido e quebrado</dd></div><div><dt>Grãos</dt><dd>Soja, milho e sorgo</dd></div><div><dt>Transparência</dt><dd>O produtor vê o número antes de ir embora</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="secagem" data-cultura="soja milho" data-title="Secagem" data-wa-msg="Olá, Marcos. Quero um site de armazém com cotação e mapa, nesta linha.">
+            <h3>Secagem</h3><p>Tira umidade sem cozinhar o grão.</p>
+            <template><p>Secador dimensionado para a safra cheia. Grão que chega tarde demais na umidade alta espera vaga, e a casa avisa antes.</p><dl><div><dt>Grãos</dt><dd>Soja e milho</dd></div><div><dt>Capacidade ilustrativa</dt><dd>2.400 toneladas por dia</dd></div><div><dt>Cuidado</dt><dd>Temperatura acompanhada. Grão queimado não sai daqui com o nosso nome</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="guarda" data-cultura="soja milho sorgo" data-title="Armazenagem" data-wa-msg="Olá, Marcos. Quero um site de armazém com cotação e mapa, nesta linha.">
+            <h3>Armazenagem</h3><p>Guarda com aeração e leitura de temperatura.</p>
+            <template><p>O grão fica com endereço de silo. Você sabe onde está, não só que “entrou na casa”.</p><dl><div><dt>Capacidade ilustrativa</dt><dd>160 mil toneladas estáticas</dd></div><div><dt>Grãos</dt><dd>Soja, milho e sorgo</dd></div><div><dt>Leitura</dt><dd>Temperatura e aeração na rotina da safra</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="guarda" data-cultura="soja" data-title="Limpeza" data-wa-msg="Olá, Marcos. Quero um site de armazém com cotação e mapa, nesta linha.">
+            <h3>Limpeza</h3><p>Impureza fora antes de subir no silo.</p>
+            <template><p>Soja com terra de mais não mistura com lote limpo. A pré-limpeza é parte do recebimento, não um favor.</p><dl><div><dt>Grão</dt><dd>Soja</dd></div><div><dt>Quando</dt><dd>Na entrada, antes da secagem</dd></div><div><dt>Por quê</dt><dd>Impureza úmida estraga o vizinho de silo</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="expedicao" data-cultura="soja milho sorgo" data-title="Expedição" data-wa-msg="Olá, Marcos. Quero um site de armazém com cotação e mapa, nesta linha.">
+            <h3>Expedição</h3><p>Carga para fora com ticket e janela de pátio.</p>
+            <template><p>Quando o produtor decide vender ou transferir, a carga sai com hora, peso e classificação de saída.</p><dl><div><dt>Grãos</dt><dd>Soja, milho e sorgo</dd></div><div><dt>Pátio</dt><dd>Carregamento com janela, para não travar o recebimento</dd></div><div><dt>Papel</dt><dd>Ticket de saída no mesmo dia</dd></div></dl></template>
+          </article>
+        </div>
+        <p data-catalog-empty hidden>Nenhum serviço neste filtro.</p>
+      </div>
+    </section>
+
+    <section class="band" id="diferenciais">
+      <div class="wrap grid-3">
+        <article class="diff"><h3>Número na cara</h3><p>Umidade e peso antes do caminhão ir embora. Sem “depois a gente manda”.</p></article>
+        <article class="diff"><h3>Fila com hora</h3><p>Na safra cheia, quem tem agenda não dorme na beira da BR.</p></article>
+        <article class="diff"><h3>Silo com endereço</h3><p>O grão não some num saldo genérico. Você sabe o silo e a leitura.</p></article>
+      </div>
+    </section>
+
+    <section class="band" id="sobre">
+      <div class="wrap story">
+        <img src="../../assets/img/silo-farm.jpg" width="1280" height="852" alt="Conjunto de silos em propriedade rural" loading="lazy">
+        <div>
+          <p class="kicker">A casa</p>
+          <h2>Três irmãos, um pátio, e a regra de não discutir amostra no escuro.</h2>
+          <p style="margin-top:.7rem;color:var(--muted)">Os Vereda abriram o primeiro silo em 1999, quando Sorriso ainda descarregava em fila que não cabia na estrada. A casa cresceu para o lado da classificação, não só do concreto. Quem entrega aqui volta porque o ticket fecha com o que saiu da lavoura.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="equipe">
+      <div class="wrap people">
+        <article class="person"><strong>Ana Vereda</strong><p>Sócia. Cuida da agenda de recebimento na safra.</p></article>
+        <article class="person"><strong>Miguel Vereda</strong><p>Classificação. A amostra passa por ele antes do papel.</p></article>
+        <article class="person"><strong>Léo Vasques</strong><p>Secagem. Temperatura e turno da madrugada.</p></article>
+      </div>
+    </section>
+
+    <section class="band" id="depoimentos">
+      <div class="wrap quotes">
+        <figure class="quote"><blockquote>“Descarreguei com hora marcada. Não passei a noite na fila da BR.”</blockquote><figcaption>Otávio L. · soja · Sorriso</figcaption></figure>
+        <figure class="quote"><blockquote>“A umidade do ticket foi a mesma que o meu medidor marcou no caminhão.”</blockquote><figcaption>Irene P. · milho · Lucas do Rio Verde</figcaption></figure>
+        <figure class="quote"><blockquote>“Sabia em qual silo estava o lote. Quando expedi, saiu o que eu guardei.”</blockquote><figcaption>Damião R. · Nova Ubiratã</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="band" id="galeria">
+      <div class="wrap shots">
+        <button type="button" data-lightbox-src="../../assets/img/silo.jpg" data-lightbox-alt="Silos"><img src="../../assets/img/silo.jpg" alt="Silos" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/silo-farm.jpg" data-lightbox-alt="Silos na fazenda"><img src="../../assets/img/silo-farm-sm.jpg" alt="Silos na fazenda" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/grain.jpg" data-lightbox-alt="Grãos"><img src="../../assets/img/grain-sm.jpg" alt="Grãos de cereal" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/harvest.jpg" data-lightbox-alt="Colheita"><img src="../../assets/img/harvest-sm.jpg" alt="Colheita" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/soy-field.jpg" data-lightbox-alt="Soja"><img src="../../assets/img/soy-field-sm.jpg" alt="Lavoura de soja" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="band" id="parceiros">
+      <div class="wrap">
+        <p class="kicker">Parceiros fictícios</p>
+        <ul class="marks"><li>Balança da Serra</li><li>Laboratório de Umidade</li><li>Frete BR-163</li><li>Aeração do Cerrado</li><li>Saco e Lona Norte</li><li>Classificação Vereda</li></ul>
+      </div>
+    </section>
+
+    <section class="band" id="faq">
+      <div class="wrap">
+        <h2>Antes de sair com o caminhão</h2>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">A cotação do site é o preço que vocês pagam?<span>+</span></button><div data-faq-panel>Não. Os números são fictícios, feitos para mostrar como um quadro fica no site. Preço de compra se combina no dia, com classificação real.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Preciso agendar?<span>+</span></button><div data-faq-panel>Na safra cheia, sim. Fora do pico, o pátio recebe por ordem, ainda com amostra e peso.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Recebem sorgo?<span>+</span></button><div data-faq-panel>Recebem, com silo separado. Não mistura com soja.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Qual a umidade de entrada?<span>+</span></button><div data-faq-panel>Acima do padrão o grão seca, e o desconto de peso segue a tabela da casa, mostrada antes da descarga.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Dá para expedir para o porto?<span>+</span></button><div data-faq-panel>A casa carrega e documenta a saída. O frete longo é do contratante. A gente não finge ser trading.</div></div>
+      </div>
+    </section>
+
+    <section class="band" id="contato">
+      <div class="wrap cta">
+        <h2>Seu armazém com quadro, mapa e ticket claro.</h2>
+        <p>Demonstração fictícia. A prévia do seu cerealista pode ter a cotação de verdade no lugar destes números.</p>
+        <a class="btn" data-wa="Olá, Marcos. Vi a demonstração dos Silos do Vereda e quero uma prévia do site do meu armazém. Podemos marcar uma conversa por vídeo.">Quero uma prévia do meu site</a>
+      </div>
+    </section>
+  </main>
+  <footer class="foot wrap">
+    <div>Silos do Vereda · Sorriso, MT · <a href="https://instagram.com/silosdovereda" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="../../index.html">Voltar ao portfólio</a></div>
+    <div>Site demonstrativo – marca e depoimentos fictícios.</div>
+  </footer>
+  <a class="wa-float" data-wa="Olá, Marcos. Vi a demonstração dos Silos do Vereda e quero uma prévia assim para o meu armazém." aria-label="Pedir uma prévia pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>Quero um site assim</a>
+  <div class="modal" data-modal hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mt"><header><h2 id="mt" data-modal-title></h2><button class="modal-x" type="button" data-modal-close aria-label="Fechar">×</button></header><div class="sheet" data-modal-body></div><a class="btn" data-modal-wa href="#">Quero um site assim</a></div></div>
+  <div class="lightbox" data-lightbox hidden><button type="button" data-lightbox-close aria-label="Fechar foto">×</button><img alt=""></div>
+  <script src="../../config.js"></script>
+  <script src="../../assets/js/demo.js"></script>
+  <script>
+    (function () {
+      var base = { soja: 128.4, milho: 58.9, sorgo: 42.1 };
+      var atual = Object.assign({}, base);
+      var brl = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
+      function paint(delta) {
+        ["soja", "milho", "sorgo"].forEach(function (k) {
+          document.getElementById("q-" + k).textContent = brl.format(atual[k]);
+          var el = document.getElementById("d-" + k);
+          if (!delta) { el.textContent = "ilustrativo"; return; }
+          var d = delta[k];
+          el.textContent = (d >= 0 ? "+" : "") + d.toFixed(2).replace(".", ",") + "% no dia · fictício";
+        });
+        var now = new Date();
+        document.getElementById("hora").textContent = now.toLocaleString("pt-BR", { hour: "2-digit", minute: "2-digit" });
+      }
+      document.getElementById("mover").addEventListener("click", function () {
+        var delta = {};
+        Object.keys(base).forEach(function (k) {
+          var pct = (Math.random() * 3 - 1.5);
+          delta[k] = pct;
+          atual[k] = Math.round(base[k] * (1 + pct / 100) * 100) / 100;
+        });
+        paint(delta);
+      });
+      paint(null);
+      var cidades = {
+        sorriso: { nome: "Sorriso", km: "Sede", txt: "Pátio principal. Recebimento, secagem e expedição. Agenda na safra cheia." },
+        lucas: { nome: "Lucas do Rio Verde", km: "cerca de 75 km", txt: "Caminhão sobe a BR com hora marcada. Não há filial: o grão entra em Sorriso." },
+        sinop: { nome: "Sinop", km: "cerca de 80 km", txt: "Rota norte. Combine antes quando a umidade estiver alta, para não perder a vaga do secador." },
+        ubirata: { nome: "Nova Ubiratã", km: "cerca de 120 km", txt: "Atendimento combinado. Fora da janela da safra, a entrada é por ordem de pátio." },
+        ipiranga: { nome: "Ipiranga do Norte", km: "cerca de 50 km", txt: "Vizinho de sede. Entra na agenda do mesmo dia quando o pátio permite." },
+        mutum: { nome: "Nova Mutum", km: "cerca de 160 km", txt: "Limite da rota ilustrativa. Frete e horário se fecham antes de sair o caminhão." }
+      };
+      var card = document.getElementById("pin-card");
+      function show(id) {
+        var c = cidades[id];
+        card.innerHTML = "<strong>" + c.nome + "</strong><p>" + c.km + "</p><p>" + c.txt + "</p>";
+        document.querySelectorAll("[data-city]").forEach(function (b) {
+          b.setAttribute("aria-pressed", b.getAttribute("data-city") === id ? "true" : "false");
+        });
+      }
+      document.querySelectorAll("[data-city]").forEach(function (b) {
+        b.addEventListener("click", function () { show(b.getAttribute("data-city")); });
+      });
+      show("sorriso");
+    })();
+  </script>
+</body>
+</html>

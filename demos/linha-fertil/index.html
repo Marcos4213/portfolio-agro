@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Linha Fértil Sementes · Rio Verde</title>
+  <meta name="description" content="Sementes em Rio Verde. Calendário de plantio por cultura, população e ciclo. Site demonstrativo.">
+  <meta name="theme-color" content="#f7f6f2">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Linha Fértil · Rio Verde">
+  <meta property="og:description" content="Semente com vigor de verdade, escolhida para o seu talhão.">
+  <meta property="og:image" content="https://marcos4213.github.io/portfolio-agro/assets/og/linha.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/chrome.css">
+  <link rel="stylesheet" href="linha.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="top" data-header>
+    <a class="brand" href="#topo">Linha Fértil</a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" data-nav>
+      <a href="#ferramenta">Calendário</a>
+      <a href="#catalogo">Sementes</a>
+      <a href="#sobre">A casa</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn" data-wa="Olá, Marcos. Vi a demonstração da Linha Fértil e quero uma prévia assim para a minha sementeira.">Quero um site assim</a>
+  </header>
+  <main id="conteudo">
+    <section class="hero wrap" id="topo">
+      <div>
+        <p class="index-no">01 — Sementes · Rio Verde, GO</p>
+        <h1>Semente com vigor para o seu talhão.</h1>
+        <p class="sub">Cultivar escolhida pela janela, não pelo folder. Soja, milho, sorgo e feijão com população, ciclo e o mês em que o cerrado de Rio Verde ainda perdoa.</p>
+        <div class="actions">
+          <a class="btn" href="#ferramenta">Ver janela de plantio</a>
+          <a class="btn ghost" data-wa="Olá, Marcos. Vi a demonstração da Linha Fértil e quero uma prévia assim para a minha sementeira.">Quero um site assim</a>
+        </div>
+      </div>
+      <figure class="hero-side">
+        <img src="../../assets/img/seeds.jpg" width="1600" height="1066" alt="Mãos plantando uma muda em solo escuro" fetchpriority="high">
+        <figcaption>Campo de vitrine na saída para Montividiu. A semente que não nasce lá não vai para a fazenda.</figcaption>
+      </figure>
+    </section>
+
+    <section class="band" id="ferramenta">
+      <div class="wrap cal">
+        <div>
+          <p class="kicker">Calendário do cerrado</p>
+          <h2>Quando entra cada cultura.</h2>
+          <label class="field" style="margin-top:1rem">Cultura
+            <select id="cultura"></select>
+          </label>
+          <div class="months" id="meses" aria-hidden="true"></div>
+        </div>
+        <div>
+          <dl class="cal-facts" id="cal-out" aria-live="polite"></dl>
+          <p style="color:var(--muted);margin-top:.8rem">Janelas ilustrativas para a região de Rio Verde. O ano, a chuva e o ZARC da sua gleba mandam mais do que esta página.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="catalogo">
+      <div class="wrap">
+        <h2>Fichas da safra</h2>
+        <div class="filters" role="toolbar" aria-label="Filtrar sementes">
+          <button type="button" data-filter="all">Todas</button>
+          <button type="button" data-filter="soja">Soja</button>
+          <button type="button" data-filter="milho">Milho</button>
+          <button type="button" data-filter="sorgo">Sorgo</button>
+          <button type="button" data-filter="feijao">Feijão</button>
+          <button type="button" data-filter="algodao">Algodão</button>
+        </div>
+        <div class="catalog" data-catalog>
+          <article class="pcard" data-item data-cat="soja" data-cultura="soja" data-title="LF 74" data-wa-msg="Olá, Marcos. Quero um catálogo de sementes com calendário, nesta linha.">
+            <span class="num">01</span><div><h3>LF 74</h3><p>Soja precoce · hábito indeterminado · abertura de plantio</p></div><span>Ficha</span>
+            <template><p>Para quem abre cedo e precisa liberar a safrinha. Vigor de arranque é o critério, não o nome bonito.</p><dl><div><dt>Ciclo</dt><dd>cerca de 100 a 110 dias</dd></div><div><dt>População</dt><dd>280 a 320 mil plantas por hectare</dd></div><div><dt>Espaçamento</dt><dd>45 ou 50 cm</dd></div><div><dt>Saco</dt><dd>40 kg, com germinação de lote na etiqueta</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="soja" data-cultura="soja" data-title="LF 80" data-wa-msg="Olá, Marcos. Quero um catálogo de sementes com calendário, nesta linha.">
+            <span class="num">02</span><div><h3>LF 80</h3><p>Soja de ciclo médio · o miolo da janela</p></div><span>Ficha</span>
+            <template><p>A cultivar que segura a maior parte da área quando a chuva chega na época.</p><dl><div><dt>Ciclo</dt><dd>cerca de 115 dias</dd></div><div><dt>População</dt><dd>260 a 300 mil plantas por hectare</dd></div><div><dt>Espaçamento</dt><dd>50 cm</dd></div><div><dt>Nota</dt><dd>Evita população alta em solo que já fecha cedo</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="soja" data-cultura="soja" data-title="LF 90" data-wa-msg="Olá, Marcos. Quero um catálogo de sementes com calendário, nesta linha.">
+            <span class="num">03</span><div><h3>LF 90</h3><p>Soja mais longa · para quem planta no fim da janela com cuidado</p></div><span>Ficha</span>
+            <template><p>Não é desculpa para atrasar. É opção quando o talhão pede ciclo e a safrinha já foi repensada.</p><dl><div><dt>Ciclo</dt><dd>cerca de 125 dias</dd></div><div><dt>População</dt><dd>240 a 280 mil</dd></div><div><dt>Risco</dt><dd>Empurra o milho. Combine a segunda safra antes de fechar o saco.</dd></div><div><dt>Saco</dt><dd>40 kg</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="milho" data-cultura="milho" data-title="LF 580" data-wa-msg="Olá, Marcos. Quero um catálogo de sementes com calendário, nesta linha.">
+            <span class="num">04</span><div><h3>LF 580</h3><p>Milho safrinha precoce</p></div><span>Ficha</span>
+            <template><p>Para entrar logo depois da soja precoce e ainda pegar chuva de abril.</p><dl><div><dt>Ciclo</dt><dd>cerca de 130 dias</dd></div><div><dt>População</dt><dd>55 a 62 mil plantas por hectare</dd></div><div><dt>Espaçamento</dt><dd>50 cm</dd></div><div><dt>Saco</dt><dd>60 mil sementes</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="milho" data-cultura="milho" data-title="LF 620" data-wa-msg="Olá, Marcos. Quero um catálogo de sementes com calendário, nesta linha.">
+            <span class="num">05</span><div><h3>LF 620</h3><p>Milho de verão, grão sadio</p></div><span>Ficha</span>
+            <template><p>Para a área de milho verão, quando a janela não é a da pressa da safrinha.</p><dl><div><dt>Ciclo</dt><dd>cerca de 140 dias</dd></div><div><dt>População</dt><dd>60 a 70 mil</dd></div><div><dt>Espaçamento</dt><dd>50 cm</dd></div><div><dt>Nota</dt><dd>Sanidade de grão pesa mais do que estande recorde</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="algodao" data-cultura="algodao" data-title="LF Fibra" data-wa-msg="Olá, Marcos. Quero um catálogo de sementes com calendário, nesta linha.">
+            <span class="num">06</span><div><h3>LF Fibra</h3><p>Algodão de ciclo médio</p></div><span>Ficha</span>
+            <template><p>Para quem planta algodão na região e precisa de ciclo que caiba antes da chuva de colheita.</p><dl><div><dt>Ciclo</dt><dd>médio</dd></div><div><dt>População</dt><dd>90 a 110 mil plantas por hectare</dd></div><div><dt>Espaçamento</dt><dd>76 a 90 cm</dd></div><div><dt>Nota</dt><dd>A janela de Rio Verde não é a do Oeste da Bahia. Confira o calendário.</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="sorgo" data-cultura="sorgo" data-title="LF Granífero" data-wa-msg="Olá, Marcos. Quero um catálogo de sementes com calendário, nesta linha.">
+            <span class="num">07</span><div><h3>LF Granífero</h3><p>Sorgo para a safrinha apertada</p></div><span>Ficha</span>
+            <template><p>Quando o milho já ficou tarde, o sorgo ainda segura área e palhada.</p><dl><div><dt>Ciclo</dt><dd>cerca de 120 dias</dd></div><div><dt>População</dt><dd>160 a 200 mil plantas</dd></div><div><dt>Espaçamento</dt><dd>50 cm</dd></div><div><dt>Uso</dt><dd>Grão e cobertura</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="feijao" data-cultura="feijao" data-title="LF Carioca" data-wa-msg="Olá, Marcos. Quero um catálogo de sementes com calendário, nesta linha.">
+            <span class="num">08</span><div><h3>LF Carioca</h3><p>Feijão de segunda época</p></div><span>Ficha</span>
+            <template><p>Área menor, janela curta, semente com procedência de lote. Feijão não perdoa semente velha.</p><dl><div><dt>Ciclo</dt><dd>cerca de 90 dias</dd></div><div><dt>População</dt><dd>200 a 240 mil plantas</dd></div><div><dt>Espaçamento</dt><dd>45 cm</dd></div><div><dt>Saco</dt><dd>conforme lote da safra</dd></div></dl></template>
+          </article>
+        </div>
+        <p data-catalog-empty hidden>Nenhuma ficha neste filtro.</p>
+      </div>
+    </section>
+
+    <section class="wrap stats" id="numeros">
+      <article><strong>16</strong><span>anos de semente em Rio Verde</span></article>
+      <article><strong>74</strong><span>cultivares acompanhadas em campo</span></article>
+      <article><strong>3</strong><span>campos de vitrine</span></article>
+      <article><strong>160 mil</strong><span>sacos na última safra da casa</span></article>
+    </section>
+
+    <section class="band" id="diferenciais">
+      <div class="wrap grid-3">
+        <article class="diff"><h3>Lote na etiqueta</h3><p>Germinação e vigor do lote que você leva, não a média do folder.</p></article>
+        <article class="diff"><h3>Vitrine aberta</h3><p>A cultivar que o vizinho elogia você vê plantada, no espaçamento da região.</p></article>
+        <article class="diff"><h3>Janela antes do saco</h3><p>A conversa começa pelo mês. Semente errada na data certa ainda perde a safrinha.</p></article>
+      </div>
+    </section>
+
+    <section class="band" id="sobre">
+      <div class="wrap">
+        <p class="kicker">A casa</p>
+        <h2>Seleciona pouco e acompanha até a colheita.</h2>
+        <p style="color:var(--muted);max-width:60ch;margin-top:.7rem">A Linha Fértil nasceu em 2010 com um campo arrendado na saída de Rio Verde. A regra ficou: cultivar que não repete resultado em dois anos não entra no saco com o nome da casa. O produtor de Montividiu, Santa Helena e Jataí passou a buscar a ficha, não o desconto da semana.</p>
+      </div>
+    </section>
+
+    <section class="band" id="galeria">
+      <div class="wrap shots">
+        <button type="button" data-lightbox-src="../../assets/img/soy-field.jpg" data-lightbox-alt="Lavoura de soja"><img src="../../assets/img/soy-field.jpg" alt="Lavoura de soja" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/corn-rows.jpg" data-lightbox-alt="Milho em fileiras"><img src="../../assets/img/corn-field-sm.jpg" alt="Milho" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/wheat-hands.jpg" data-lightbox-alt="Mãos com espigas"><img src="../../assets/img/wheat-hands-sm.jpg" alt="Mãos com espigas" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/aerial-rows.jpg" data-lightbox-alt="Linhas de plantio"><img src="../../assets/img/aerial-rows-sm.jpg" alt="Linhas de plantio" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/seeds.jpg" data-lightbox-alt="Muda na mão"><img src="../../assets/img/seeds-sm.jpg" alt="Muda na mão" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="band" id="equipe">
+      <div class="wrap people">
+        <article class="person"><strong>Nara Queiroz</strong><p>Sócia. Cuida do campo de vitrine e da ficha que sai com o saco.</p></article>
+        <article class="person"><strong>Ivo Lacerda</strong><p>Agrônomo. População e data, sem aumentar semente para vender volume.</p></article>
+        <article class="person"><strong>Helena Prado</strong><p>Lotes. Germinação conferida antes do caminhão.</p></article>
+      </div>
+    </section>
+
+    <section class="band" id="depoimentos">
+      <div class="wrap quotes">
+        <figure class="quote"><blockquote>“Troquei a cultivar da abertura e a safrinha entrou em janeiro, não em fevereiro.”</blockquote><figcaption>Renato G. · soja · Montividiu</figcaption></figure>
+        <figure class="quote"><blockquote>“A etiqueta do lote batia com o que nasceu. Isso já me faltou em outra casa.”</blockquote><figcaption>Olívia S. · Rio Verde</figcaption></figure>
+        <figure class="quote"><blockquote>“Me tiraram do milho tardio e puseram sorgo. Perdi menos do que teria insistido.”</blockquote><figcaption>Paulo E. · Santa Helena de Goiás</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="band" id="parceiros">
+      <div class="wrap">
+        <p class="kicker">Parceiros fictícios</p>
+        <ul class="marks"><li>Campo de Vitrine</li><li>Laboratório de Lote</li><li>Saco do Cerrado</li><li>Tratamento de Semente GO</li><li>Frete da Janela</li><li>Análise de Solo Verde</li></ul>
+      </div>
+    </section>
+
+    <section class="band" id="faq">
+      <div class="wrap">
+        <h2>Antes de fechar o saco</h2>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">A janela do site vale para a minha fazenda?<span>+</span></button><div data-faq-panel>É referência de Rio Verde e arredores. Talhão, seguro e zona de risco mudam a data. A ficha não substitui o ZARC nem o agrônomo.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Vocês tratam a semente?<span>+</span></button><div data-faq-panel>O tratamento industrial sai combinado com o lote. Não misturamos receita de balcão em cima de semente já tratada.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Posso visitar a vitrine?<span>+</span></button><div data-faq-panel>Pode, na safra, com hora marcada para não pisar parcela no meio da avaliação.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Entregam em Jataí e Mineiros?<span>+</span></button><div data-faq-panel>Entregam na rota semanal. Fora da rota, o frete entra na conversa antes do pedido.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">E se o lote não nascer como a etiqueta?<span>+</span></button><div data-faq-panel>A casa abre o lote de novo com você. Semente sem procedência a gente não discute: não sai do galpão.</div></div>
+      </div>
+    </section>
+
+    <section class="band" id="contato">
+      <div class="wrap cta">
+        <h2>Sua sementeira com ficha, não com folder.</h2>
+        <p style="color:var(--muted)">Demonstração fictícia. A prévia da sua casa pode ter cultivar, janela e o jeito com que você já conversa no balcão.</p>
+        <a class="btn" data-wa="Olá, Marcos. Vi a demonstração da Linha Fértil e quero uma prévia do site da minha sementeira. Podemos marcar uma conversa por vídeo.">Quero uma prévia do meu site</a>
+      </div>
+    </section>
+  </main>
+  <footer class="foot wrap">
+    <div>Linha Fértil · Rio Verde, GO · <a href="https://instagram.com/linhafertil.sementes" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="../../index.html">Voltar ao portfólio</a></div>
+    <div>Site demonstrativo – marca e depoimentos fictícios.</div>
+  </footer>
+  <a class="wa-float" data-wa="Olá, Marcos. Vi a demonstração da Linha Fértil e quero uma prévia assim para a minha sementeira." aria-label="Pedir uma prévia pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>Quero um site assim</a>
+  <div class="modal" data-modal hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mt"><header><h2 id="mt" data-modal-title></h2><button class="modal-x" type="button" data-modal-close aria-label="Fechar">×</button></header><div class="sheet" data-modal-body></div><a class="btn" data-modal-wa href="#">Quero um catálogo assim</a></div></div>
+  <div class="lightbox" data-lightbox hidden><button type="button" data-lightbox-close aria-label="Fechar foto">×</button><img alt=""></div>
+  <script src="../../config.js"></script>
+  <script src="../../assets/js/demo.js"></script>
+  <script>
+    (function () {
+      var dados = {
+        soja: { nome: "Soja", meses: [9, 10, 11], janela: "20 de setembro a 15 de novembro", pop: "260 a 320 mil plantas/ha", esp: "45 ou 50 cm", ciclo: "100 a 125 dias", nota: "Quem espera demais a chuva empurra a safrinha. Semente de vigor alto tolera melhor o plantio no pó, sem autorização para atrasar." },
+        milho: { nome: "Milho safrinha", meses: [1, 2, 3], janela: "janeiro a início de março", pop: "55 a 65 mil plantas/ha", esp: "50 cm", ciclo: "120 a 140 dias", nota: "Depois da primeira quinzena de março, o risco de seca no enchimento sobe. A casa prefere reduzir área a insistir." },
+        verao: { nome: "Milho verão", meses: [10, 11], janela: "outubro a novembro", pop: "60 a 70 mil plantas/ha", esp: "50 cm", ciclo: "cerca de 140 dias", nota: "Área de verão pede população cheia e grão sadio. Não use a receita da safrinha." },
+        algodao: { nome: "Algodão", meses: [12, 1], janela: "dezembro a janeiro", pop: "90 a 110 mil plantas/ha", esp: "76 a 90 cm", ciclo: "médio, conforme cultivar", nota: "A janela de Goiás não copia a do Oeste da Bahia. Confirme antes de trazer semente de outra praça." },
+        sorgo: { nome: "Sorgo", meses: [1, 2], janela: "janeiro a fevereiro", pop: "160 a 200 mil plantas/ha", esp: "50 cm", ciclo: "cerca de 120 dias", nota: "Entra quando o milho já ficou tarde. Segura grão e palhada." },
+        feijao: { nome: "Feijão", meses: [2, 3], janela: "fevereiro a março", pop: "200 a 240 mil plantas/ha", esp: "45 cm", ciclo: "cerca de 90 dias", nota: "Janela curta e semente nova. Lote velho não entra nesta casa." }
+      };
+      var nomes = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+      var sel = document.getElementById("cultura");
+      Object.keys(dados).forEach(function (k) {
+        var o = document.createElement("option");
+        o.value = k; o.textContent = dados[k].nome; sel.appendChild(o);
+      });
+      var meses = document.getElementById("meses");
+      nomes.forEach(function (n) {
+        var s = document.createElement("span");
+        s.textContent = n;
+        meses.appendChild(s);
+      });
+      function paint() {
+        var d = dados[sel.value];
+        Array.prototype.forEach.call(meses.children, function (el, i) {
+          el.classList.toggle("on", d.meses.indexOf(i + 1) !== -1);
+        });
+        document.getElementById("cal-out").innerHTML =
+          "<div><dt>Janela</dt><dd>" + d.janela + "</dd></div>" +
+          "<div><dt>População</dt><dd>" + d.pop + "</dd></div>" +
+          "<div><dt>Espaçamento</dt><dd>" + d.esp + "</dd></div>" +
+          "<div><dt>Ciclo</dt><dd>" + d.ciclo + "</dd></div>" +
+          "<div><dt>No cerrado</dt><dd>" + d.nota + "</dd></div>";
+      }
+      sel.addEventListener("change", paint);
+      paint();
+    })();
+  </script>
+</body>
+</html>

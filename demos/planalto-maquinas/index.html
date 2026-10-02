@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planalto Máquinas · Luís Eduardo Magalhães</title>
+  <meta name="description" content="Concessionária de máquinas no Oeste da Bahia. Simulador ilustrativo de financiamento e consórcio. Site demonstrativo.">
+  <meta name="theme-color" content="#0c0c0c">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Planalto Máquinas · LEM">
+  <meta property="og:description" content="Máquina nova no Oeste da Bahia, com parcela que cabe na safra.">
+  <meta property="og:image" content="https://marcos4213.github.io/portfolio-agro/assets/og/planalto.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@560;650&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/chrome.css">
+  <link rel="stylesheet" href="planalto.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="top" data-header>
+    <a class="brand" href="#topo">Planalto<span>Luís Eduardo Magalhães · BA</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" data-nav>
+      <a href="#catalogo">Máquinas</a>
+      <a href="#ferramenta">Parcela</a>
+      <a href="#sobre">A casa</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn" data-wa="Olá, Marcos. Vi a demonstração da Planalto Máquinas e quero uma prévia assim para a minha concessionária.">Quero um site assim</a>
+  </header>
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <img src="../../assets/img/tractor-sunset.jpg" width="1280" height="852" alt="Trator em lavoura no fim da tarde" fetchpriority="high" decoding="async" data-parallax="-0.08">
+      <div class="veil"></div>
+      <div class="wrap">
+        <p class="kicker">Concessionária · Oeste da Bahia</p>
+        <h1>Máquina nova. Parcela que cabe na safra.</h1>
+        <p class="sub">Trator, colheitadeira e plantadeira para o MATOPIBA, com oficina em LEM e uma simulação clara antes da conversa com o banco.</p>
+        <div class="actions">
+          <a class="btn" href="#ferramenta">Simular parcela</a>
+          <a class="btn ghost" data-wa="Olá, Marcos. Vi a demonstração da Planalto Máquinas e quero uma prévia assim para a minha concessionária.">Quero um site assim</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="catalogo">
+      <div class="wrap">
+        <div class="rail-head">
+          <h2>A linha da casa</h2>
+          <div class="filters" role="toolbar" aria-label="Filtrar máquinas">
+            <button type="button" data-filter="all">Tudo</button>
+            <button type="button" data-filter="trator">Tratores</button>
+            <button type="button" data-filter="colheita">Colheita</button>
+            <button type="button" data-filter="plantio">Plantio</button>
+            <button type="button" data-filter="pulverizacao">Pulverização</button>
+          </div>
+        </div>
+        <div class="rail" data-catalog>
+          <article class="pcard" data-item data-cat="trator" data-cultura="geral" data-title="Campo 180" data-wa-msg="Olá, Marcos. Quero um site de máquinas com simulador de parcela, nesta linha.">
+            <img src="../../assets/img/tractor.jpg" alt="Trator em campo" width="1100" height="617" loading="lazy">
+            <div><p class="kicker">180 cv</p><h3>Campo 180</h3><p>Trator de lavoura para grade e plantio. Referência ilustrativa: R$ 420 mil.</p></div>
+            <template><p>O trator que puxa a grade e a plantadeira de 30 linhas sem pedir socorro no fim do dia.</p><dl><div><dt>Potência</dt><dd>180 cv</dd></div><div><dt>Uso</dt><dd>Preparo e plantio</dd></div><div><dt>Valor ilustrativo</dt><dd>R$ 420.000</dd></div><div><dt>Oficina</dt><dd>Revisão de entrega em LEM</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="trator" data-cultura="geral" data-title="Campo 260" data-wa-msg="Olá, Marcos. Quero um site de máquinas com simulador de parcela, nesta linha.">
+            <img src="../../assets/img/tractor-work.jpg" alt="Trator de grande porte no campo" width="1100" height="1655" loading="lazy">
+            <div><p class="kicker">260 cv</p><h3>Campo 260</h3><p>Para área contínua do Oeste. Referência ilustrativa: R$ 780 mil.</p></div>
+            <template><p>Quando o talhão é longo e a janela é curta, a potência deixa de ser vaidade.</p><dl><div><dt>Potência</dt><dd>260 cv</dd></div><div><dt>Uso</dt><dd>Plantio e transbordo pesado</dd></div><div><dt>Valor ilustrativo</dt><dd>R$ 780.000</dd></div><div><dt>Oficina</dt><dd>Entrega com checklist de 40 itens</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="colheita" data-cultura="soja milho" data-title="Axial 7.9" data-wa-msg="Olá, Marcos. Quero um site de máquinas com simulador de parcela, nesta linha.">
+            <img src="../../assets/img/harvest.jpg" alt="Colheita em lavoura dourada" width="1280" height="853" loading="lazy">
+            <div><p class="kicker">Axial</p><h3>Axial 7.9</h3><p>Colheitadeira para soja e milho. Referência ilustrativa: R$ 2,45 milhões.</p></div>
+            <template><p>Máquina de colheita para quem não pode parar por peça miúda no meio do talhão. A oficina de LEM guarda o kit de plataforma.</p><dl><div><dt>Culturas</dt><dd>Soja e milho</dd></div><div><dt>Plataforma</dt><dd>Até 40 pés, draper à parte</dd></div><div><dt>Valor ilustrativo</dt><dd>R$ 2.450.000</dd></div><div><dt>Suporte</dt><dd>Técnico de safra na região</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="plantio" data-cultura="soja milho" data-title="Linha 30" data-wa-msg="Olá, Marcos. Quero um site de máquinas com simulador de parcela, nesta linha.">
+            <img src="../../assets/img/aerial-rows.jpg" alt="Linhas de plantio vistas de cima" width="1280" height="852" loading="lazy">
+            <div><p class="kicker">30 linhas</p><h3>Linha 30</h3><p>Plantadeira pantográfica. Referência ilustrativa: R$ 890 mil.</p></div>
+            <template><p>Copia o terreno do Oeste sem enterrar semente demais no baixo. Dosador conferido na entrega.</p><dl><div><dt>Linhas</dt><dd>30</dd></div><div><dt>Culturas</dt><dd>Soja e milho</dd></div><div><dt>Valor ilustrativo</dt><dd>R$ 890.000</dd></div><div><dt>Entrega</dt><dd>Regulagem no primeiro talhão, com o operador</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="pulverizacao" data-cultura="soja milho algodao" data-title="Barra 30" data-wa-msg="Olá, Marcos. Quero um site de máquinas com simulador de parcela, nesta linha.">
+            <img src="../../assets/img/sprayer.jpg" alt="Pulverizador em lavoura" width="1400" height="933" loading="lazy">
+            <div><p class="kicker">3.000 L</p><h3>Barra 30</h3><p>Autopropelido. Referência ilustrativa: R$ 1,35 milhão.</p></div>
+            <template><p>Para a janela de fungicida do algodão e da soja, quando o pulverizador de arrasto não dá conta do relógio.</p><dl><div><dt>Tanque</dt><dd>3.000 litros</dd></div><div><dt>Barra</dt><dd>30 metros</dd></div><div><dt>Valor ilustrativo</dt><dd>R$ 1.350.000</dd></div><div><dt>Treino</dt><dd>Operador treinado na entrega</dd></div></dl></template>
+          </article>
+          <article class="pcard" data-item data-cat="colheita" data-cultura="soja" data-title="Draper 40" data-wa-msg="Olá, Marcos. Quero um site de máquinas com simulador de parcela, nesta linha.">
+            <img src="../../assets/img/soy-field.jpg" alt="Lavoura de soja" width="1280" height="852" loading="lazy">
+            <div><p class="kicker">40 pés</p><h3>Draper 40</h3><p>Plataforma de soja. Referência ilustrativa: R$ 620 mil.</p></div>
+            <template><p>Plataforma draper para soja de porte baixo no fim da tarde, quando a perda na plataforma aparece na planilha.</p><dl><div><dt>Largura</dt><dd>40 pés</dd></div><div><dt>Cultura</dt><dd>Soja</dd></div><div><dt>Valor ilustrativo</dt><dd>R$ 620.000</dd></div><div><dt>Acoplamento</dt><dd>Conferido na Axial 7.9 da casa</dd></div></dl></template>
+          </article>
+        </div>
+        <p data-catalog-empty hidden>Nenhuma máquina neste filtro.</p>
+      </div>
+    </section>
+
+    <section class="band" id="ferramenta">
+      <div class="wrap sim">
+        <div>
+          <p class="kicker">Simulação ilustrativa</p>
+          <h2>Quanto fica a parcela?</h2>
+          <p>Não é proposta de banco nem de consórcio. É a conta que o dono faz na mesa antes de chamar o gerente. Taxas fictícias, só para a demonstração.</p>
+          <p class="parcela" id="parcela">—</p>
+          <p id="parcela-det">Escolha a máquina e calcule.</p>
+        </div>
+        <form id="fin-form">
+          <div class="modes" role="group" aria-label="Modalidade">
+            <button type="button" id="modo-fin" aria-pressed="true">Financiamento</button>
+            <button type="button" id="modo-con" aria-pressed="false">Consórcio</button>
+          </div>
+          <label class="field">Máquina
+            <select id="bem"></select>
+          </label>
+          <label class="field">Entrada: <span id="ent-label">20%</span>
+            <input id="entrada" type="range" min="10" max="50" value="20">
+          </label>
+          <label class="field">Prazo (meses)
+            <input id="prazo" type="number" min="12" max="60" step="6" value="48">
+          </label>
+          <button class="btn" type="submit">Calcular parcela</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="wrap stats" id="numeros">
+      <article><strong>15</strong><span>anos no Oeste da Bahia</span></article>
+      <article><strong>860</strong><span>máquinas entregues</span></article>
+      <article><strong>14</strong><span>municípios atendidos</span></article>
+      <article><strong>9</strong><span>boxes na oficina de LEM</span></article>
+    </section>
+
+    <section class="band" id="diferenciais">
+      <div class="wrap grid-3">
+        <article class="diff reveal"><h3>Entrega no talhão</h3><p>A máquina não fica no pátio esperando o operador aprender sozinho. A regulagem é no primeiro dia.</p></article>
+        <article class="diff reveal"><h3>Oficina que conhece a safra</h3><p>Peça de plataforma reservada antes de novembro. Colheita parada não entra na fila de quem chegou primeiro.</p></article>
+        <article class="diff reveal"><h3>Número na mesa</h3><p>A simulação separa financiamento e consórcio. A decisão de crédito continua sendo sua, com o banco.</p></article>
+      </div>
+    </section>
+
+    <section class="band" id="sobre">
+      <div class="wrap story">
+        <img src="../../assets/img/landscape.jpg" width="1600" height="843" alt="Paisagem de lavoura e céu aberto" loading="lazy">
+        <div>
+          <p class="kicker">A casa</p>
+          <h2>Cresceu com o algodão e ficou com a soja.</h2>
+          <p style="color:var(--muted);margin-top:.7rem">A Planalto abriu em LEM quando o Oeste ainda explicava para o Sul o que era um talhão de mil hectares. A oficina veio antes do showroom: máquina parada no pó não perdoa vitrine bonita.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="equipe">
+      <div class="wrap people">
+        <article class="person"><span class="mono">AB</span><div><strong>Aline Bastos</strong><p>Sócia. Conduz a entrega e a conversa com o banco.</p></div></article>
+        <article class="person"><span class="mono">TM</span><div><strong>Túlio Mendes</strong><p>Chefe de oficina. Agenda a revisão antes do plantio.</p></div></article>
+        <article class="person"><span class="mono">RN</span><div><strong>Rosa Nunes</strong><p>Entrega técnica. Sobe na máquina com o operador.</p></div></article>
+      </div>
+    </section>
+
+    <section class="band" id="depoimentos">
+      <div class="wrap quotes">
+        <figure class="quote"><blockquote>“A parcela que eles mostraram bateu com o que o banco fechou. Sem surpresa na safra.”</blockquote><figcaption>Miguel A. · soja · Barreiras</figcaption></figure>
+        <figure class="quote"><blockquote>“A plantadeira chegou regulada. Não perdi dois dias de janela aprendendo.”</blockquote><figcaption>Patrícia K. · São Desidério</figcaption></figure>
+        <figure class="quote"><blockquote>“Na colheita, a oficina atendeu a plataforma no mesmo dia. Isso paga a escolha.”</blockquote><figcaption>Hugo F. · LEM</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="band" id="galeria">
+      <div class="wrap shots">
+        <button type="button" data-lightbox-src="../../assets/img/tractor-sunset.jpg" data-lightbox-alt="Trator no fim da tarde"><img src="../../assets/img/tractor-sunset.jpg" alt="Trator no fim da tarde" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/aerial-green.jpg" data-lightbox-alt="Lavoura vista de cima"><img src="../../assets/img/aerial-green-sm.jpg" alt="Lavoura vista de cima" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/harvest.jpg" data-lightbox-alt="Colheita"><img src="../../assets/img/harvest-sm.jpg" alt="Colheita" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/farmer.jpg" data-lightbox-alt="Pessoa na lavoura"><img src="../../assets/img/farmer-sm.jpg" alt="Pessoa na lavoura" loading="lazy"></button>
+        <button type="button" data-lightbox-src="../../assets/img/green-field.jpg" data-lightbox-alt="Campo verde"><img src="../../assets/img/green-field-sm.jpg" alt="Campo verde" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="band" id="parceiros">
+      <div class="wrap">
+        <p class="kicker">Parceiros fictícios, sem logo de fabricante</p>
+        <ul class="marks"><li>Oficina do Cerrado</li><li>Pneu Oeste</li><li>Crédito Safra Mesa</li><li>Transporte MATOPIBA</li><li>Peça de Plataforma</li><li>Diesel da Serra</li></ul>
+      </div>
+    </section>
+
+    <section class="band" id="faq">
+      <div class="wrap">
+        <h2>Antes de sentar com o banco</h2>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">A parcela do site é a do financiamento?<span>+</span></button><div data-faq-panel>Não. A taxa de 1,35% ao mês é ilustrativa, só para você ver a ordem de grandeza. O banco e a administradora é que fecham o número.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Vocês entregam fora de LEM?<span>+</span></button><div data-faq-panel>Sim, nos 14 municípios da rota: Barreiras, São Desidério, Correntina, Formosa do Rio Preto e vizinhos. O frete entra na conversa, não no simulador.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Tem máquina usada?<span>+</span></button><div data-faq-panel>Tem, quando entra de troca. Não fica nesta vitrine para não misturar com a linha nova. Peça no WhatsApp.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">A oficina atende máquina de outra casa?<span>+</span></button><div data-faq-panel>Atende revisão e plataforma, com hora marcada na safra. Prioridade para quem comprou aqui.</div></div>
+        <div class="faq-item" data-faq><button type="button" aria-expanded="false">Consórcio contemplado na hora?<span>+</span></button><div data-faq-panel>A simulação não contempla. Ela só mostra a parcela de um consórcio ilustrativo, sem lance e sem fundo além do que está escrito na conta.</div></div>
+      </div>
+    </section>
+
+    <section class="band" id="contato">
+      <div class="wrap cta">
+        <p class="kicker">Para a concessionária</p>
+        <h2>Um site com esta presença, no nome da sua casa.</h2>
+        <p>Demonstração fictícia. A prévia da sua loja pode ter a linha, a oficina e a parcela do jeito que o dono decide.</p>
+        <a class="btn" data-wa="Olá, Marcos. Vi a demonstração da Planalto Máquinas e quero uma prévia do site da minha concessionária. Podemos marcar uma conversa por vídeo.">Quero uma prévia do meu site</a>
+      </div>
+    </section>
+  </main>
+  <footer class="foot wrap">
+    <div>Planalto Máquinas · LEM, Oeste da Bahia · <a href="https://instagram.com/planalto.maquinas" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="../../index.html">Voltar ao portfólio</a></div>
+    <div>Site demonstrativo – marca e depoimentos fictícios. Simulação sem valor de proposta.</div>
+  </footer>
+  <a class="wa-float" data-wa="Olá, Marcos. Vi a demonstração da Planalto Máquinas e quero uma prévia assim para a minha concessionária." aria-label="Pedir uma prévia pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>Quero um site assim</a>
+  <div class="modal" data-modal hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mt"><header><h2 id="mt" data-modal-title></h2><button class="modal-x" type="button" data-modal-close aria-label="Fechar">×</button></header><div class="sheet" data-modal-body></div><a class="btn" data-modal-wa href="#">Quero um site assim</a></div></div>
+  <div class="lightbox" data-lightbox hidden><button type="button" data-lightbox-close aria-label="Fechar foto">×</button><img alt=""></div>
+  <script src="../../config.js"></script>
+  <script src="../../assets/js/demo.js"></script>
+  <script>
+    (function () {
+      var bens = [
+        { nome: "Campo 180", valor: 420000 },
+        { nome: "Campo 260", valor: 780000 },
+        { nome: "Axial 7.9", valor: 2450000 },
+        { nome: "Linha 30", valor: 890000 },
+        { nome: "Barra 30", valor: 1350000 },
+        { nome: "Draper 40", valor: 620000 }
+      ];
+      var sel = document.getElementById("bem");
+      bens.forEach(function (b, i) {
+        var o = document.createElement("option");
+        o.value = String(i);
+        o.textContent = b.nome;
+        sel.appendChild(o);
+      });
+      var modo = "fin";
+      var brl = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
+      document.getElementById("modo-fin").addEventListener("click", function () { modo = "fin"; this.setAttribute("aria-pressed", "true"); document.getElementById("modo-con").setAttribute("aria-pressed", "false"); });
+      document.getElementById("modo-con").addEventListener("click", function () { modo = "con"; this.setAttribute("aria-pressed", "true"); document.getElementById("modo-fin").setAttribute("aria-pressed", "false"); });
+      var entrada = document.getElementById("entrada");
+      entrada.addEventListener("input", function () { document.getElementById("ent-label").textContent = entrada.value + "%"; });
+      document.getElementById("fin-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        var bem = bens[Number(sel.value)];
+        var ent = Number(entrada.value) / 100;
+        var n = Math.max(12, Math.min(60, Number(document.getElementById("prazo").value) || 48));
+        var pv = bem.valor * (1 - ent);
+        var parcela, texto;
+        if (modo === "fin") {
+          var i = 0.0135;
+          parcela = pv * i * Math.pow(1 + i, n) / (Math.pow(1 + i, n) - 1);
+          texto = "Financiamento ilustrativo de " + bem.nome + ". Taxa fictícia de 1,35% ao mês. Entrada " + brl.format(bem.valor * ent) + ". Total pago nas parcelas: " + brl.format(parcela * n) + ". Não é proposta de crédito.";
+        } else {
+          var admin = 0.0012;
+          var fundo = 0.01;
+          var total = pv * (1 + admin * n + fundo);
+          parcela = total / n;
+          texto = "Consórcio ilustrativo de " + bem.nome + ". Taxa de administração fictícia de 0,12% ao mês e fundo de 1%. Sem lance e sem contemplação. Não é proposta.";
+        }
+        document.getElementById("parcela").textContent = brl.format(parcela);
+        document.getElementById("parcela-det").textContent = texto;
+      });
+      document.getElementById("fin-form").requestSubmit();
+    })();
+  </script>
+</body>
+</html>
